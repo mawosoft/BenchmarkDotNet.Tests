@@ -1,0 +1,584 @@
+________________________________________________________________________
+C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\BDNParamDisposal.dll
+
+DsplParam 1 .ctor
+   at BDNParamDisposal.DsplParam..ctor()
+   at BDNParamDisposal.Benchmarks1.Params()+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.BenchmarkConverter.ToArray(Object sourceValue, MemberInfo memberInfo, Type type)
+   at BenchmarkDotNet.Running.BenchmarkConverter.GetValidValuesForParamsSource(Type parentType, String sourceName)
+   at BenchmarkDotNet.Running.BenchmarkConverter.<>c__DisplayClass9_0.<GetParameterDefinitions>b__2(ParamsSourceAttribute attribute, Type _)
+   at BenchmarkDotNet.Running.BenchmarkConverter.<>c__DisplayClass9_1`1.<GetParameterDefinitions>b__4(ValueTuple`5 member)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Collections.Generic.EnumerableHelpers.IterativeCopy[T](IEnumerable`1 source, T[] array, Int32 arrayIndex, Int32 count)
+   at System.Collections.Generic.EnumerableHelpers.Copy[T](IEnumerable`1 source, T[] array, Int32 arrayIndex, Int32 count)
+   at System.Linq.Enumerable.ConcatNIterator`1.LazyToArray()
+   at System.Linq.Enumerable.ConcatNIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.BenchmarkConverter.GetParameterDefinitions(Type type)
+   at BenchmarkDotNet.Running.BenchmarkConverter.MethodsToBenchmarksWithFullConfig(Type type, MethodInfo[] benchmarkMethods, IConfig config)
+   at BenchmarkDotNet.Running.BenchmarkConverter.TypeToBenchmarks(Type type, IConfig config)
+   at BenchmarkDotNet.Running.TypeFilter.<>c__DisplayClass1_0.<Filter>b__0(Type type)
+   at System.Linq.Enumerable.SelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.TypeFilter.Filter(IConfig effectiveConfig, IEnumerable`1 types)
+   at BenchmarkDotNet.Running.BenchmarkSwitcher.RunWithDirtyAssemblyResolveHelper(String[] args, IConfig config, Boolean askUserForInput)
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithDirtyAssemblyResolveHelper(Assembly assembly, IConfig config, String[] args)
+   at BenchmarkDotNet.Running.BenchmarkRunner.<>c__DisplayClass3_0.<Run>b__0()
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithExceptionHandling(Func`1 run)
+   at BenchmarkDotNet.Running.BenchmarkRunner.Run(Assembly assembly, IConfig config, String[] args)
+   at BDNParamDisposal.Program.Main(String[] args)
+
+DsplParam 2 .ctor
+DsplArgum 1 .ctor
+   at BDNParamDisposal.DsplArgum..ctor()
+   at BDNParamDisposal.Benchmarks1.Args()+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.BenchmarkConverter.ToArray(Object sourceValue, MemberInfo memberInfo, Type type)
+   at BenchmarkDotNet.Running.BenchmarkConverter.GetValidValuesForParamsSource(Type parentType, String sourceName)
+   at BenchmarkDotNet.Running.BenchmarkConverter.GetArgumentsDefinitions(MethodInfo benchmark, Type target, SummaryStyle summaryStyle)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.BenchmarkConverter.MethodsToBenchmarksWithFullConfig(Type type, MethodInfo[] benchmarkMethods, IConfig config)
+   at BenchmarkDotNet.Running.BenchmarkConverter.TypeToBenchmarks(Type type, IConfig config)
+   at BenchmarkDotNet.Running.TypeFilter.<>c__DisplayClass1_0.<Filter>b__0(Type type)
+   at System.Linq.Enumerable.SelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BenchmarkDotNet.Running.TypeFilter.Filter(IConfig effectiveConfig, IEnumerable`1 types)
+   at BenchmarkDotNet.Running.BenchmarkSwitcher.RunWithDirtyAssemblyResolveHelper(String[] args, IConfig config, Boolean askUserForInput)
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithDirtyAssemblyResolveHelper(Assembly assembly, IConfig config, String[] args)
+   at BenchmarkDotNet.Running.BenchmarkRunner.<>c__DisplayClass3_0.<Run>b__0()
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithExceptionHandling(Func`1 run)
+   at BenchmarkDotNet.Running.BenchmarkRunner.Run(Assembly assembly, IConfig config, String[] args)
+   at BDNParamDisposal.Program.Main(String[] args)
+
+DsplArgum 2 .ctor
+DsplArgum 3 .ctor
+DsplArgum 4 .ctor
+DsplArgum 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 1 Method
+DsplParam 1 Method
+DsplArgum 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 1 Method
+DsplParam 1 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 2 Method
+DsplParam 1 Method
+DsplArgum 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 2 Method
+DsplParam 1 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 3 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 3 Method
+DsplParam 1 Method
+DsplArgum 3 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 3 Method
+DsplParam 1 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 4 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_3.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_3.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 4 Method
+DsplParam 1 Method
+DsplArgum 4 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_3.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_3.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplArgum 4 Method
+DsplParam 1 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplParam 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method3()
+   at BenchmarkDotNet.Autogenerated.Runnable_4.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_4.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+DsplParam 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method3()
+   at BenchmarkDotNet.Autogenerated.Runnable_4.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_4.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 1 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_5.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_5.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 1 Method
+DsplParam 2 Method
+DsplArgum 1 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_5.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_5.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 1 Method
+DsplParam 2 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_6.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_6.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 2 Method
+DsplParam 2 Method
+DsplArgum 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method1(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_6.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_6.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 2 Method
+DsplParam 2 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 3 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_7.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_7.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 3 Method
+DsplParam 2 Method
+DsplArgum 3 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_7.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_7.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 3 Method
+DsplParam 2 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplArgum 4 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_8.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_8.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 4 Method
+DsplParam 2 Method
+DsplArgum 4 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method2(DsplArgum arg1)
+   at BenchmarkDotNet.Autogenerated.Runnable_8.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_8.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplArgum 4 Method
+DsplParam 2 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplParam 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method3()
+   at BenchmarkDotNet.Autogenerated.Runnable_9.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_9.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+DsplParam 2 Method
+   at BDNParamDisposal.Benchmarks1.Bm1Method3()
+   at BenchmarkDotNet.Autogenerated.Runnable_9.WorkloadActionUnroll(Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunSpecific(Int64 invokeCount, IterationMode iterationMode, Int32 iterationCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_9.Run(BenchmarkCase benchmarkCase, IHost host)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.Implementation.RunnableProgram.Run(BenchmarkId benchmarkId, Assembly partitionAssembly, BenchmarkCase benchmarkCase, IHost host)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.ExecuteCore(IHost host, ExecuteParameters parameters)
+   at BenchmarkDotNet.Toolchains.InProcess.Emit.InProcessEmitExecutor.<>c__DisplayClass9_0.<Execute>b__0()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+
+DsplParam 2 Method
+GlobalCleanup Begin
+GlobalCleanup Done
+DsplParam 1 Dispose 1
+   at BenchmarkDotNet.Parameters.ParameterInstances.Dispose()
+   at BenchmarkDotNet.Running.BenchmarkRunInfo.Dispose()
+   at BenchmarkDotNet.Running.BenchmarkRunnerClean.Run(BenchmarkRunInfo[] benchmarkRunInfos)
+   at BenchmarkDotNet.Running.BenchmarkSwitcher.RunWithDirtyAssemblyResolveHelper(String[] args, IConfig config, Boolean askUserForInput)
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithDirtyAssemblyResolveHelper(Assembly assembly, IConfig config, String[] args)
+   at BenchmarkDotNet.Running.BenchmarkRunner.<>c__DisplayClass3_0.<Run>b__0()
+   at BenchmarkDotNet.Running.BenchmarkRunner.RunWithExceptionHandling(Func`1 run)
+   at BenchmarkDotNet.Running.BenchmarkRunner.Run(Assembly assembly, IConfig config, String[] args)
+   at BDNParamDisposal.Program.Main(String[] args)
+
+DsplArgum 1 Dispose 1
+DsplParam 1 Dispose 2
+DsplArgum 1 Dispose 2
+DsplParam 1 Dispose 3
+DsplArgum 2 Dispose 1
+DsplParam 1 Dispose 4
+DsplArgum 2 Dispose 2
+DsplParam 1 Dispose 5
+DsplArgum 3 Dispose 1
+DsplParam 1 Dispose 6
+DsplArgum 3 Dispose 2
+DsplParam 1 Dispose 7
+DsplArgum 4 Dispose 1
+DsplParam 1 Dispose 8
+DsplArgum 4 Dispose 2
+DsplParam 1 Dispose 9
+DsplParam 1 Dispose 10
+DsplParam 2 Dispose 1
+DsplArgum 1 Dispose 3
+DsplParam 2 Dispose 2
+DsplArgum 1 Dispose 4
+DsplParam 2 Dispose 3
+DsplArgum 2 Dispose 3
+DsplParam 2 Dispose 4
+DsplArgum 2 Dispose 4
+DsplParam 2 Dispose 5
+DsplArgum 3 Dispose 3
+DsplParam 2 Dispose 6
+DsplArgum 3 Dispose 4
+DsplParam 2 Dispose 7
+DsplArgum 4 Dispose 3
+DsplParam 2 Dispose 8
+DsplArgum 4 Dispose 4
+DsplParam 2 Dispose 9
+DsplParam 2 Dispose 10
+MainCleanup Begin
+MainCleanup Done

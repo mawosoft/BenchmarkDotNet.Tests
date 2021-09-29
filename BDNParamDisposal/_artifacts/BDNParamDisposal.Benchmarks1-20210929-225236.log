@@ -1,0 +1,911 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 20 benchmark(s) in total *****
+// ***** Building 2 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:00:04 (4.64 sec)   *****
+// Found 20 benchmarks:
+//   Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+//   Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+//   Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+//   Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+//   Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+//   Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+//   Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+//   Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+//   Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+//   Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+//   Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+//   Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+//   Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+//   Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+//   Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+//   Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+//   Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+//   Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+//   Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+//   Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method1(arg1: DsplArgum 1, Prop1: DsplParam 1)" --job "Monitor" --benchmarkId 0 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 954400.00 ns, 954.4000 us/op
+WorkloadWarmup   2: 1 op, 711400.00 ns, 711.4000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 389200.00 ns, 389.2000 us/op
+WorkloadActual   2: 1 op, 234700.00 ns, 234.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 389200.00 ns, 389.2000 us/op
+WorkloadResult   2: 1 op, 234700.00 ns, 234.7000 us/op
+
+// AfterAll
+// Benchmark Process 9340 has exited with code 0.
+
+Mean = 311.950 μs, StdErr = 77.250 μs (24.76%), N = 2, StdDev = 109.248 μs
+Min = 234.700 μs, Q1 = 273.325 μs, Median = 311.950 μs, Q3 = 350.575 μs, Max = 389.200 μs
+IQR = 77.250 μs, LowerFence = 157.450 μs, UpperFence = 466.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1097900.00 ns, 1.0979 ms/op
+WorkloadWarmup   2: 1 op, 487400.00 ns, 487.4000 us/op
+
+WorkloadActual   1: 1 op, 476800.00 ns, 476.8000 us/op
+WorkloadActual   2: 1 op, 433500.00 ns, 433.5000 us/op
+
+WorkloadResult   1: 1 op, 476800.00 ns, 476.8000 us/op
+WorkloadResult   2: 1 op, 433500.00 ns, 433.5000 us/op
+
+
+Mean = 455.150 μs, StdErr = 21.650 μs (4.76%), N = 2, StdDev = 30.618 μs
+Min = 433.500 μs, Q1 = 444.325 μs, Median = 455.150 μs, Q3 = 465.975 μs, Max = 476.800 μs
+IQR = 21.650 μs, LowerFence = 411.850 μs, UpperFence = 498.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method1(arg1: DsplArgum 2, Prop1: DsplParam 1)" --job "Monitor" --benchmarkId 1 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 883000.00 ns, 883.0000 us/op
+WorkloadWarmup   2: 1 op, 339900.00 ns, 339.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 400300.00 ns, 400.3000 us/op
+WorkloadActual   2: 1 op, 384700.00 ns, 384.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 400300.00 ns, 400.3000 us/op
+WorkloadResult   2: 1 op, 384700.00 ns, 384.7000 us/op
+
+// AfterAll
+// Benchmark Process 7068 has exited with code 0.
+
+Mean = 392.500 μs, StdErr = 7.800 μs (1.99%), N = 2, StdDev = 11.031 μs
+Min = 384.700 μs, Q1 = 388.600 μs, Median = 392.500 μs, Q3 = 396.400 μs, Max = 400.300 μs
+IQR = 7.800 μs, LowerFence = 376.900 μs, UpperFence = 408.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 645400.00 ns, 645.4000 us/op
+WorkloadWarmup   2: 1 op, 429000.00 ns, 429.0000 us/op
+
+WorkloadActual   1: 1 op, 407600.00 ns, 407.6000 us/op
+WorkloadActual   2: 1 op, 462900.00 ns, 462.9000 us/op
+
+WorkloadResult   1: 1 op, 407600.00 ns, 407.6000 us/op
+WorkloadResult   2: 1 op, 462900.00 ns, 462.9000 us/op
+
+
+Mean = 435.250 μs, StdErr = 27.650 μs (6.35%), N = 2, StdDev = 39.103 μs
+Min = 407.600 μs, Q1 = 421.425 μs, Median = 435.250 μs, Q3 = 449.075 μs, Max = 462.900 μs
+IQR = 27.650 μs, LowerFence = 379.950 μs, UpperFence = 490.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method2(arg1: DsplArgum 3, Prop1: DsplParam 1)" --job "Monitor" --benchmarkId 2 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1029100.00 ns, 1.0291 ms/op
+WorkloadWarmup   2: 1 op, 343600.00 ns, 343.6000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 355500.00 ns, 355.5000 us/op
+WorkloadActual   2: 1 op, 406200.00 ns, 406.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 355500.00 ns, 355.5000 us/op
+WorkloadResult   2: 1 op, 406200.00 ns, 406.2000 us/op
+
+// AfterAll
+// Benchmark Process 3416 has exited with code 0.
+
+Mean = 380.850 μs, StdErr = 25.350 μs (6.66%), N = 2, StdDev = 35.850 μs
+Min = 355.500 μs, Q1 = 368.175 μs, Median = 380.850 μs, Q3 = 393.525 μs, Max = 406.200 μs
+IQR = 25.350 μs, LowerFence = 330.150 μs, UpperFence = 431.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 807900.00 ns, 807.9000 us/op
+WorkloadWarmup   2: 1 op, 428800.00 ns, 428.8000 us/op
+
+WorkloadActual   1: 1 op, 510900.00 ns, 510.9000 us/op
+WorkloadActual   2: 1 op, 401600.00 ns, 401.6000 us/op
+
+WorkloadResult   1: 1 op, 510900.00 ns, 510.9000 us/op
+WorkloadResult   2: 1 op, 401600.00 ns, 401.6000 us/op
+
+
+Mean = 456.250 μs, StdErr = 54.650 μs (11.98%), N = 2, StdDev = 77.287 μs
+Min = 401.600 μs, Q1 = 428.925 μs, Median = 456.250 μs, Q3 = 483.575 μs, Max = 510.900 μs
+IQR = 54.650 μs, LowerFence = 346.950 μs, UpperFence = 565.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method2(arg1: DsplArgum 4, Prop1: DsplParam 1)" --job "Monitor" --benchmarkId 3 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1342100.00 ns, 1.3421 ms/op
+WorkloadWarmup   2: 1 op, 652400.00 ns, 652.4000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 277800.00 ns, 277.8000 us/op
+WorkloadActual   2: 1 op, 201100.00 ns, 201.1000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 277800.00 ns, 277.8000 us/op
+WorkloadResult   2: 1 op, 201100.00 ns, 201.1000 us/op
+
+// AfterAll
+// Benchmark Process 8596 has exited with code 0.
+
+Mean = 239.450 μs, StdErr = 38.350 μs (16.02%), N = 2, StdDev = 54.235 μs
+Min = 201.100 μs, Q1 = 220.275 μs, Median = 239.450 μs, Q3 = 258.625 μs, Max = 277.800 μs
+IQR = 38.350 μs, LowerFence = 162.750 μs, UpperFence = 316.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 661300.00 ns, 661.3000 us/op
+WorkloadWarmup   2: 1 op, 389700.00 ns, 389.7000 us/op
+
+WorkloadActual   1: 1 op, 444100.00 ns, 444.1000 us/op
+WorkloadActual   2: 1 op, 419200.00 ns, 419.2000 us/op
+
+WorkloadResult   1: 1 op, 444100.00 ns, 444.1000 us/op
+WorkloadResult   2: 1 op, 419200.00 ns, 419.2000 us/op
+
+
+Mean = 431.650 μs, StdErr = 12.450 μs (2.88%), N = 2, StdDev = 17.607 μs
+Min = 419.200 μs, Q1 = 425.425 μs, Median = 431.650 μs, Q3 = 437.875 μs, Max = 444.100 μs
+IQR = 12.450 μs, LowerFence = 406.750 μs, UpperFence = 456.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method3(Prop1: DsplParam 1)" --job "Monitor" --benchmarkId 4 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1192100.00 ns, 1.1921 ms/op
+WorkloadWarmup   2: 1 op, 280900.00 ns, 280.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 218900.00 ns, 218.9000 us/op
+WorkloadActual   2: 1 op, 160700.00 ns, 160.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 218900.00 ns, 218.9000 us/op
+WorkloadResult   2: 1 op, 160700.00 ns, 160.7000 us/op
+
+// AfterAll
+// Benchmark Process 7300 has exited with code 0.
+
+Mean = 189.800 μs, StdErr = 29.100 μs (15.33%), N = 2, StdDev = 41.154 μs
+Min = 160.700 μs, Q1 = 175.250 μs, Median = 189.800 μs, Q3 = 204.350 μs, Max = 218.900 μs
+IQR = 29.100 μs, LowerFence = 131.600 μs, UpperFence = 248.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 656900.00 ns, 656.9000 us/op
+WorkloadWarmup   2: 1 op, 304100.00 ns, 304.1000 us/op
+
+WorkloadActual   1: 1 op, 308000.00 ns, 308.0000 us/op
+WorkloadActual   2: 1 op, 273000.00 ns, 273.0000 us/op
+
+WorkloadResult   1: 1 op, 308000.00 ns, 308.0000 us/op
+WorkloadResult   2: 1 op, 273000.00 ns, 273.0000 us/op
+
+
+Mean = 290.500 μs, StdErr = 17.500 μs (6.02%), N = 2, StdDev = 24.749 μs
+Min = 273.000 μs, Q1 = 281.750 μs, Median = 290.500 μs, Q3 = 299.250 μs, Max = 308.000 μs
+IQR = 17.500 μs, LowerFence = 255.500 μs, UpperFence = 325.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method1(arg1: DsplArgum 1, Prop1: DsplParam 2)" --job "Monitor" --benchmarkId 5 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 772000.00 ns, 772.0000 us/op
+WorkloadWarmup   2: 1 op, 452900.00 ns, 452.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 314600.00 ns, 314.6000 us/op
+WorkloadActual   2: 1 op, 188900.00 ns, 188.9000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 314600.00 ns, 314.6000 us/op
+WorkloadResult   2: 1 op, 188900.00 ns, 188.9000 us/op
+
+// AfterAll
+// Benchmark Process 9504 has exited with code 0.
+
+Mean = 251.750 μs, StdErr = 62.850 μs (24.97%), N = 2, StdDev = 88.883 μs
+Min = 188.900 μs, Q1 = 220.325 μs, Median = 251.750 μs, Q3 = 283.175 μs, Max = 314.600 μs
+IQR = 62.850 μs, LowerFence = 126.050 μs, UpperFence = 377.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 800400.00 ns, 800.4000 us/op
+WorkloadWarmup   2: 1 op, 397700.00 ns, 397.7000 us/op
+
+WorkloadActual   1: 1 op, 566000.00 ns, 566.0000 us/op
+WorkloadActual   2: 1 op, 424000.00 ns, 424.0000 us/op
+
+WorkloadResult   1: 1 op, 566000.00 ns, 566.0000 us/op
+WorkloadResult   2: 1 op, 424000.00 ns, 424.0000 us/op
+
+
+Mean = 495.000 μs, StdErr = 71.000 μs (14.34%), N = 2, StdDev = 100.409 μs
+Min = 424.000 μs, Q1 = 459.500 μs, Median = 495.000 μs, Q3 = 530.500 μs, Max = 566.000 μs
+IQR = 71.000 μs, LowerFence = 353.000 μs, UpperFence = 637.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method1(arg1: DsplArgum 2, Prop1: DsplParam 2)" --job "Monitor" --benchmarkId 6 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1104300.00 ns, 1.1043 ms/op
+WorkloadWarmup   2: 1 op, 373800.00 ns, 373.8000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 283900.00 ns, 283.9000 us/op
+WorkloadActual   2: 1 op, 233000.00 ns, 233.0000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 283900.00 ns, 283.9000 us/op
+WorkloadResult   2: 1 op, 233000.00 ns, 233.0000 us/op
+
+// AfterAll
+// Benchmark Process 7176 has exited with code 0.
+
+Mean = 258.450 μs, StdErr = 25.450 μs (9.85%), N = 2, StdDev = 35.992 μs
+Min = 233.000 μs, Q1 = 245.725 μs, Median = 258.450 μs, Q3 = 271.175 μs, Max = 283.900 μs
+IQR = 25.450 μs, LowerFence = 207.550 μs, UpperFence = 309.350 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 1025100.00 ns, 1.0251 ms/op
+WorkloadWarmup   2: 1 op, 369300.00 ns, 369.3000 us/op
+
+WorkloadActual   1: 1 op, 479300.00 ns, 479.3000 us/op
+WorkloadActual   2: 1 op, 356100.00 ns, 356.1000 us/op
+
+WorkloadResult   1: 1 op, 479300.00 ns, 479.3000 us/op
+WorkloadResult   2: 1 op, 356100.00 ns, 356.1000 us/op
+
+
+Mean = 417.700 μs, StdErr = 61.600 μs (14.75%), N = 2, StdDev = 87.116 μs
+Min = 356.100 μs, Q1 = 386.900 μs, Median = 417.700 μs, Q3 = 448.500 μs, Max = 479.300 μs
+IQR = 61.600 μs, LowerFence = 294.500 μs, UpperFence = 540.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method2(arg1: DsplArgum 3, Prop1: DsplParam 2)" --job "Monitor" --benchmarkId 7 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 942800.00 ns, 942.8000 us/op
+WorkloadWarmup   2: 1 op, 352900.00 ns, 352.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 408700.00 ns, 408.7000 us/op
+WorkloadActual   2: 1 op, 370100.00 ns, 370.1000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 408700.00 ns, 408.7000 us/op
+WorkloadResult   2: 1 op, 370100.00 ns, 370.1000 us/op
+
+// AfterAll
+// Benchmark Process 6032 has exited with code 0.
+
+Mean = 389.400 μs, StdErr = 19.300 μs (4.96%), N = 2, StdDev = 27.294 μs
+Min = 370.100 μs, Q1 = 379.750 μs, Median = 389.400 μs, Q3 = 399.050 μs, Max = 408.700 μs
+IQR = 19.300 μs, LowerFence = 350.800 μs, UpperFence = 428.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 665700.00 ns, 665.7000 us/op
+WorkloadWarmup   2: 1 op, 373500.00 ns, 373.5000 us/op
+
+WorkloadActual   1: 1 op, 477800.00 ns, 477.8000 us/op
+WorkloadActual   2: 1 op, 498700.00 ns, 498.7000 us/op
+
+WorkloadResult   1: 1 op, 477800.00 ns, 477.8000 us/op
+WorkloadResult   2: 1 op, 498700.00 ns, 498.7000 us/op
+
+
+Mean = 488.250 μs, StdErr = 10.450 μs (2.14%), N = 2, StdDev = 14.779 μs
+Min = 477.800 μs, Q1 = 483.025 μs, Median = 488.250 μs, Q3 = 493.475 μs, Max = 498.700 μs
+IQR = 10.450 μs, LowerFence = 467.350 μs, UpperFence = 509.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method2(arg1: DsplArgum 4, Prop1: DsplParam 2)" --job "Monitor" --benchmarkId 8 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 849100.00 ns, 849.1000 us/op
+WorkloadWarmup   2: 1 op, 377500.00 ns, 377.5000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 279100.00 ns, 279.1000 us/op
+WorkloadActual   2: 1 op, 250300.00 ns, 250.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 279100.00 ns, 279.1000 us/op
+WorkloadResult   2: 1 op, 250300.00 ns, 250.3000 us/op
+
+// AfterAll
+// Benchmark Process 2636 has exited with code 0.
+
+Mean = 264.700 μs, StdErr = 14.400 μs (5.44%), N = 2, StdDev = 20.365 μs
+Min = 250.300 μs, Q1 = 257.500 μs, Median = 264.700 μs, Q3 = 271.900 μs, Max = 279.100 μs
+IQR = 14.400 μs, LowerFence = 235.900 μs, UpperFence = 293.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 660300.00 ns, 660.3000 us/op
+WorkloadWarmup   2: 1 op, 374300.00 ns, 374.3000 us/op
+
+WorkloadActual   1: 1 op, 466700.00 ns, 466.7000 us/op
+WorkloadActual   2: 1 op, 361100.00 ns, 361.1000 us/op
+
+WorkloadResult   1: 1 op, 466700.00 ns, 466.7000 us/op
+WorkloadResult   2: 1 op, 361100.00 ns, 361.1000 us/op
+
+
+Mean = 413.900 μs, StdErr = 52.800 μs (12.76%), N = 2, StdDev = 74.670 μs
+Min = 361.100 μs, Q1 = 387.500 μs, Median = 413.900 μs, Q3 = 440.300 μs, Max = 466.700 μs
+IQR = 52.800 μs, LowerFence = 308.300 μs, UpperFence = 519.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "Monitor.dll" --benchmarkName "BDNParamDisposal.Benchmarks1.Bm1Method3(Prop1: DsplParam 2)" --job "Monitor" --benchmarkId 9 in C:\Users\mw\Projects\BenchmarkDotNet.Tests\BDNParamDisposal\bin\Debug\net5.0\Monitor\bin\Debug\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+// GC=Concurrent Workstation
+// Job: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 719700.00 ns, 719.7000 us/op
+WorkloadWarmup   2: 1 op, 372300.00 ns, 372.3000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 270400.00 ns, 270.4000 us/op
+WorkloadActual   2: 1 op, 153500.00 ns, 153.5000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 270400.00 ns, 270.4000 us/op
+WorkloadResult   2: 1 op, 153500.00 ns, 153.5000 us/op
+
+// AfterAll
+// Benchmark Process 5592 has exited with code 0.
+
+Mean = 211.950 μs, StdErr = 58.450 μs (27.58%), N = 2, StdDev = 82.661 μs
+Min = 153.500 μs, Q1 = 182.725 μs, Median = 211.950 μs, Q3 = 241.175 μs, Max = 270.400 μs
+IQR = 58.450 μs, LowerFence = 95.050 μs, UpperFence = 328.850 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// **************************
+// Benchmark: Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+// GC=Concurrent Workstation
+// Job: Job-RXASJQ(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2)
+
+WorkloadWarmup   1: 1 op, 536100.00 ns, 536.1000 us/op
+WorkloadWarmup   2: 1 op, 424800.00 ns, 424.8000 us/op
+
+WorkloadActual   1: 1 op, 431100.00 ns, 431.1000 us/op
+WorkloadActual   2: 1 op, 319600.00 ns, 319.6000 us/op
+
+WorkloadResult   1: 1 op, 431100.00 ns, 431.1000 us/op
+WorkloadResult   2: 1 op, 319600.00 ns, 319.6000 us/op
+
+
+Mean = 375.350 μs, StdErr = 55.750 μs (14.85%), N = 2, StdDev = 78.842 μs
+Min = 319.600 μs, Q1 = 347.475 μs, Median = 375.350 μs, Q3 = 403.225 μs, Max = 431.100 μs
+IQR = 55.750 μs, LowerFence = 263.850 μs, UpperFence = 486.850 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BDNParamDisposal.Benchmarks1-report.csv
+  BenchmarkDotNet.Artifacts\results\BDNParamDisposal.Benchmarks1-report-github.md
+  BenchmarkDotNet.Artifacts\results\BDNParamDisposal.Benchmarks1-report.html
+
+// * Detailed results *
+Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 311.950 μs, StdErr = 77.250 μs (24.76%), N = 2, StdDev = 109.248 μs
+Min = 234.700 μs, Q1 = 273.325 μs, Median = 311.950 μs, Q3 = 350.575 μs, Max = 389.200 μs
+IQR = 77.250 μs, LowerFence = 157.450 μs, UpperFence = 466.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[198.143 μs ; 425.757 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 1]
+Runtime = ; GC = 
+Mean = 455.150 μs, StdErr = 21.650 μs (4.76%), N = 2, StdDev = 30.618 μs
+Min = 433.500 μs, Q1 = 444.325 μs, Median = 455.150 μs, Q3 = 465.975 μs, Max = 476.800 μs
+IQR = 21.650 μs, LowerFence = 411.850 μs, UpperFence = 498.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[423.255 μs ; 487.045 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 392.500 μs, StdErr = 7.800 μs (1.99%), N = 2, StdDev = 11.031 μs
+Min = 384.700 μs, Q1 = 388.600 μs, Median = 392.500 μs, Q3 = 396.400 μs, Max = 400.300 μs
+IQR = 7.800 μs, LowerFence = 376.900 μs, UpperFence = 408.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[381.009 μs ; 403.991 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 2]
+Runtime = ; GC = 
+Mean = 435.250 μs, StdErr = 27.650 μs (6.35%), N = 2, StdDev = 39.103 μs
+Min = 407.600 μs, Q1 = 421.425 μs, Median = 435.250 μs, Q3 = 449.075 μs, Max = 462.900 μs
+IQR = 27.650 μs, LowerFence = 379.950 μs, UpperFence = 490.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[394.515 μs ; 475.985 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 380.850 μs, StdErr = 25.350 μs (6.66%), N = 2, StdDev = 35.850 μs
+Min = 355.500 μs, Q1 = 368.175 μs, Median = 380.850 μs, Q3 = 393.525 μs, Max = 406.200 μs
+IQR = 25.350 μs, LowerFence = 330.150 μs, UpperFence = 431.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[343.504 μs ; 418.196 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 3]
+Runtime = ; GC = 
+Mean = 456.250 μs, StdErr = 54.650 μs (11.98%), N = 2, StdDev = 77.287 μs
+Min = 401.600 μs, Q1 = 428.925 μs, Median = 456.250 μs, Q3 = 483.575 μs, Max = 510.900 μs
+IQR = 54.650 μs, LowerFence = 346.950 μs, UpperFence = 565.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[375.738 μs ; 536.762 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 239.450 μs, StdErr = 38.350 μs (16.02%), N = 2, StdDev = 54.235 μs
+Min = 201.100 μs, Q1 = 220.275 μs, Median = 239.450 μs, Q3 = 258.625 μs, Max = 277.800 μs
+IQR = 38.350 μs, LowerFence = 162.750 μs, UpperFence = 316.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[182.952 μs ; 295.948 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1, arg1=DsplArgum 4]
+Runtime = ; GC = 
+Mean = 431.650 μs, StdErr = 12.450 μs (2.88%), N = 2, StdDev = 17.607 μs
+Min = 419.200 μs, Q1 = 425.425 μs, Median = 431.650 μs, Q3 = 437.875 μs, Max = 444.100 μs
+IQR = 12.450 μs, LowerFence = 406.750 μs, UpperFence = 456.550 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[413.308 μs ; 449.992 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 189.800 μs, StdErr = 29.100 μs (15.33%), N = 2, StdDev = 41.154 μs
+Min = 160.700 μs, Q1 = 175.250 μs, Median = 189.800 μs, Q3 = 204.350 μs, Max = 218.900 μs
+IQR = 29.100 μs, LowerFence = 131.600 μs, UpperFence = 248.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[146.929 μs ; 232.671 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 1]
+Runtime = ; GC = 
+Mean = 290.500 μs, StdErr = 17.500 μs (6.02%), N = 2, StdDev = 24.749 μs
+Min = 273.000 μs, Q1 = 281.750 μs, Median = 290.500 μs, Q3 = 299.250 μs, Max = 308.000 μs
+IQR = 17.500 μs, LowerFence = 255.500 μs, UpperFence = 325.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[264.718 μs ; 316.282 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 251.750 μs, StdErr = 62.850 μs (24.97%), N = 2, StdDev = 88.883 μs
+Min = 188.900 μs, Q1 = 220.325 μs, Median = 251.750 μs, Q3 = 283.175 μs, Max = 314.600 μs
+IQR = 62.850 μs, LowerFence = 126.050 μs, UpperFence = 377.450 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[159.157 μs ; 344.343 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 1]
+Runtime = ; GC = 
+Mean = 495.000 μs, StdErr = 71.000 μs (14.34%), N = 2, StdDev = 100.409 μs
+Min = 424.000 μs, Q1 = 459.500 μs, Median = 495.000 μs, Q3 = 530.500 μs, Max = 566.000 μs
+IQR = 71.000 μs, LowerFence = 353.000 μs, UpperFence = 637.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[390.401 μs ; 599.599 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 258.450 μs, StdErr = 25.450 μs (9.85%), N = 2, StdDev = 35.992 μs
+Min = 233.000 μs, Q1 = 245.725 μs, Median = 258.450 μs, Q3 = 271.175 μs, Max = 283.900 μs
+IQR = 25.450 μs, LowerFence = 207.550 μs, UpperFence = 309.350 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[220.956 μs ; 295.944 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method1: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 2]
+Runtime = ; GC = 
+Mean = 417.700 μs, StdErr = 61.600 μs (14.75%), N = 2, StdDev = 87.116 μs
+Min = 356.100 μs, Q1 = 386.900 μs, Median = 417.700 μs, Q3 = 448.500 μs, Max = 479.300 μs
+IQR = 61.600 μs, LowerFence = 294.500 μs, UpperFence = 540.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[326.949 μs ; 508.451 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 389.400 μs, StdErr = 19.300 μs (4.96%), N = 2, StdDev = 27.294 μs
+Min = 370.100 μs, Q1 = 379.750 μs, Median = 389.400 μs, Q3 = 399.050 μs, Max = 408.700 μs
+IQR = 19.300 μs, LowerFence = 350.800 μs, UpperFence = 428.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[360.967 μs ; 417.833 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 3]
+Runtime = ; GC = 
+Mean = 488.250 μs, StdErr = 10.450 μs (2.14%), N = 2, StdDev = 14.779 μs
+Min = 477.800 μs, Q1 = 483.025 μs, Median = 488.250 μs, Q3 = 493.475 μs, Max = 498.700 μs
+IQR = 10.450 μs, LowerFence = 467.350 μs, UpperFence = 509.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[472.855 μs ; 503.645 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 264.700 μs, StdErr = 14.400 μs (5.44%), N = 2, StdDev = 20.365 μs
+Min = 250.300 μs, Q1 = 257.500 μs, Median = 264.700 μs, Q3 = 271.900 μs, Max = 279.100 μs
+IQR = 14.400 μs, LowerFence = 235.900 μs, UpperFence = 293.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[243.485 μs ; 285.915 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method2: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2, arg1=DsplArgum 4]
+Runtime = ; GC = 
+Mean = 413.900 μs, StdErr = 52.800 μs (12.76%), N = 2, StdDev = 74.670 μs
+Min = 361.100 μs, Q1 = 387.500 μs, Median = 413.900 μs, Q3 = 440.300 μs, Max = 466.700 μs
+IQR = 52.800 μs, LowerFence = 308.300 μs, UpperFence = 519.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[336.113 μs ; 491.687 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method3: Monitor(BuildConfiguration=Debug, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+Runtime = .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG; GC = Concurrent Workstation
+Mean = 211.950 μs, StdErr = 58.450 μs (27.58%), N = 2, StdDev = 82.661 μs
+Min = 153.500 μs, Q1 = 182.725 μs, Median = 211.950 μs, Q3 = 241.175 μs, Max = 270.400 μs
+IQR = 58.450 μs, LowerFence = 95.050 μs, UpperFence = 328.850 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[125.840 μs ; 298.060 μs) | @@
+---------------------------------------------------
+
+Benchmarks1.Bm1Method3: MonitorInProc(Toolchain=InProcessEmitToolchain, IterationCount=2, LaunchCount=1, RunStrategy=Monitoring, UnrollFactor=1, WarmupCount=2) [Prop1=DsplParam 2]
+Runtime = ; GC = 
+Mean = 375.350 μs, StdErr = 55.750 μs (14.85%), N = 2, StdDev = 78.842 μs
+Min = 319.600 μs, Q1 = 347.475 μs, Median = 375.350 μs, Q3 = 403.225 μs, Max = 431.100 μs
+IQR = 55.750 μs, LowerFence = 263.850 μs, UpperFence = 486.850 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = 0, Kurtosis = 0.25, MValue = 2
+-------------------- Histogram --------------------
+[293.217 μs ; 457.483 μs) | @@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19042.1237 (20H2/October2020Update), VM=VirtualBox
+AMD Ryzen 5 3400G with Radeon Vega Graphics, 1 CPU, 4 logical and 4 physical cores
+.NET SDK=5.0.401
+  [Host]  : .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG  [AttachedDebugger]
+  Monitor : .NET 5.0.10 (5.0.1021.41214), X64 RyuJIT DEBUG
+
+IterationCount=2  LaunchCount=1  RunStrategy=Monitoring  
+UnrollFactor=1  WarmupCount=2  
+
+|     Method |           Job | BuildConfiguration |              Toolchain |       Prop1 |        arg1 |     Mean | Error |    StdDev | Ratio | RatioSD |
+|----------- |-------------- |------------------- |----------------------- |------------ |------------ |---------:|------:|----------:|------:|--------:|
+| Bm1Method1 |       Monitor |              Debug |                Default | DsplParam 1 | DsplArgum 1 | 311.9 μs |    NA | 109.25 μs |  0.68 |    0.19 |
+| Bm1Method1 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 1 | DsplArgum 1 | 455.1 μs |    NA |  30.62 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method1 |       Monitor |              Debug |                Default | DsplParam 1 | DsplArgum 2 | 392.5 μs |    NA |  11.03 μs |  0.91 |    0.11 |
+| Bm1Method1 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 1 | DsplArgum 2 | 435.2 μs |    NA |  39.10 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method2 |       Monitor |              Debug |                Default | DsplParam 1 | DsplArgum 3 | 380.9 μs |    NA |  35.85 μs |  0.85 |    0.22 |
+| Bm1Method2 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 1 | DsplArgum 3 | 456.2 μs |    NA |  77.29 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method2 |       Monitor |              Debug |                Default | DsplParam 1 | DsplArgum 4 | 239.4 μs |    NA |  54.24 μs |  0.55 |    0.10 |
+| Bm1Method2 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 1 | DsplArgum 4 | 431.6 μs |    NA |  17.61 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method3 |       Monitor |              Debug |                Default | DsplParam 1 |           ? | 189.8 μs |    NA |  41.15 μs |  0.65 |    0.09 |
+| Bm1Method3 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 1 |           ? | 290.5 μs |    NA |  24.75 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method1 |       Monitor |              Debug |                Default | DsplParam 2 | DsplArgum 1 | 251.8 μs |    NA |  88.88 μs |  0.50 |    0.08 |
+| Bm1Method1 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 2 | DsplArgum 1 | 495.0 μs |    NA | 100.41 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method1 |       Monitor |              Debug |                Default | DsplParam 2 | DsplArgum 2 | 258.4 μs |    NA |  35.99 μs |  0.62 |    0.04 |
+| Bm1Method1 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 2 | DsplArgum 2 | 417.7 μs |    NA |  87.12 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method2 |       Monitor |              Debug |                Default | DsplParam 2 | DsplArgum 3 | 389.4 μs |    NA |  27.29 μs |  0.80 |    0.08 |
+| Bm1Method2 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 2 | DsplArgum 3 | 488.2 μs |    NA |  14.78 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method2 |       Monitor |              Debug |                Default | DsplParam 2 | DsplArgum 4 | 264.7 μs |    NA |  20.36 μs |  0.65 |    0.07 |
+| Bm1Method2 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 2 | DsplArgum 4 | 413.9 μs |    NA |  74.67 μs |  1.00 |    0.00 |
+|            |               |                    |                        |             |             |          |       |           |       |         |
+| Bm1Method3 |       Monitor |              Debug |                Default | DsplParam 2 |           ? | 211.9 μs |    NA |  82.66 μs |  0.55 |    0.10 |
+| Bm1Method3 | MonitorInProc |            Default | InProcessEmitToolchain | DsplParam 2 |           ? | 375.4 μs |    NA |  78.84 μs |  1.00 |    0.00 |
+
+// * Warnings *
+MinIterationTime
+  Benchmarks1.Bm1Method1: Monitor -> The minimum observed iteration time is 234.7000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method1: Monitor -> The minimum observed iteration time is 384.7000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method2: Monitor -> The minimum observed iteration time is 355.5000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method2: Monitor -> The minimum observed iteration time is 201.1000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method3: Monitor -> The minimum observed iteration time is 160.7000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method1: Monitor -> The minimum observed iteration time is 188.9000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method1: Monitor -> The minimum observed iteration time is 233.0000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method2: Monitor -> The minimum observed iteration time is 370.1000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method2: Monitor -> The minimum observed iteration time is 250.3000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Benchmarks1.Bm1Method3: Monitor -> The minimum observed iteration time is 153.5000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+Environment
+  Summary                         -> Benchmark was executed with attached debugger
+  Summary                         -> Benchmark was executed on the virtual machine with VirtualBox hypervisor. Virtualization can affect the measurement result.
+  Benchmarks1.Bm1Method1: Monitor -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+
+// * Legends *
+  Prop1   : Value of the 'Prop1' parameter
+  arg1    : Value of the 'arg1' parameter
+  Mean    : Arithmetic mean of all measurements
+  Error   : Half of 99.9% confidence interval
+  StdDev  : Standard deviation of all measurements
+  Ratio   : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  1 μs    : 1 Microsecond (0.000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:03 (3.36 sec), executed benchmarks: 20
+
+Global total time: 00:00:08 (8.01 sec), executed benchmarks: 20
+// * Artifacts cleanup *
