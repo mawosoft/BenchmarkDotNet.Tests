@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netcoreapp2.0;netstandard2.0;net48;net472</TargetFrameworks>
+    <Configurations>Debug;Release;SysMgmt450;SysMgmt460;SysMgmt470;SysMgmt500</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SysMgmtVersion Condition = "'$(Configuration)' == 'SysMgmt450'">4.5.0</SysMgmtVersion>
+    <SysMgmtVersion Condition = "'$(Configuration)' == 'SysMgmt460'">4.6.0</SysMgmtVersion>
+    <SysMgmtVersion Condition = "'$(Configuration)' == 'SysMgmt470'">4.7.0</SysMgmtVersion>
+    <SysMgmtVersion Condition = "'$(Configuration)' == 'SysMgmt500'">5.0.0</SysMgmtVersion>
+    <!--<SysMgmtVersion Condition = "'$(Configuration)' == 'Debug'">5.0.0</SysMgmtVersion>
+    <SysMgmtVersion Condition = "'$(Configuration)' == 'Release'">5.0.0</SysMgmtVersion>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="$(SysMgmtVersion)" />
+  </ItemGroup>
+
+</Project>

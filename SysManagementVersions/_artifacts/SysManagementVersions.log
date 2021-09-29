@@ -1,0 +1,223 @@
+﻿
+Executing: SysMgmt450\net472\SysManagementVersions.exe
+Executing: SysMgmt450\net48\SysManagementVersions.exe
+Executing: SysMgmt450\netstandard2.0\SysManagementVersions.dll
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Framework 4.8.4400.0
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+  File Version: 4.8.4084.0 Informational Version: 4.8.4084.0
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt450\netcoreapp2.0\SysManagementVersions.dll
+Executing: SysMgmt450\netcoreapp2.1\SysManagementVersions.dll
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Core 4.6.30411.01
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/.nuget/packages/system.management/4.5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.6.26515.06 Informational Version: 4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt450\netcoreapp3.1\SysManagementVersions.dll
+Environment Version: 3.1.18
+Framework Description: .NET Core 3.1.18
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt450/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.6.26515.06 Informational Version: 4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+
+
+Executing: SysMgmt450\net5.0\SysManagementVersions.dll
+Environment Version: 5.0.9
+Framework Description: .NET 5.0.9
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt450/net5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.6.26515.06 Informational Version: 4.6.26515.06 @BuiltBy: dlab-DDVSOWINAGE059 @Branch: release/2.1 @SrcCode: https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") failed with exception:
+Cannot marshal 'parameter #3': Cannot marshal a string by-value with the [Out] attribute.
+
+_____________________________________________________________________________________________________
+
+Executing: SysMgmt460\net48\SysManagementVersions.exe
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Framework 4.8.4400.0
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+  File Version: 4.8.4084.0 Informational Version: 4.8.4084.0
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt460\netcoreapp2.1\SysManagementVersions.dll
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Core 4.6.30411.01
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/.nuget/packages/system.management/4.6.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.46214 Informational Version: 3.0.0+4ac4c0367003fe3973a3648eb0715ddb0e3bbcea
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt460\netcoreapp3.1\SysManagementVersions.dll
+Environment Version: 3.1.18
+Framework Description: .NET Core 3.1.18
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt460/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.46214 Informational Version: 3.0.0+4ac4c0367003fe3973a3648eb0715ddb0e3bbcea
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt460\net5.0\SysManagementVersions.dll
+Environment Version: 5.0.9
+Framework Description: .NET 5.0.9
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt460/net5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.46214 Informational Version: 3.0.0+4ac4c0367003fe3973a3648eb0715ddb0e3bbcea
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+_____________________________________________________________________________________________________
+
+Executing: SysMgmt470\net48\SysManagementVersions.exe
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Framework 4.8.4400.0
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+  File Version: 4.8.4084.0 Informational Version: 4.8.4084.0
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt470\netcoreapp2.1\SysManagementVersions.dll
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Core 4.6.30411.01
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/.nuget/packages/system.management/4.7.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.56404 Informational Version: 3.1.0+0f7f38c4fd323b26da10cce95f857f77f0f09b48
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt470\netcoreapp3.1\SysManagementVersions.dll
+Environment Version: 3.1.18
+Framework Description: .NET Core 3.1.18
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt470/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.56404 Informational Version: 3.1.0+0f7f38c4fd323b26da10cce95f857f77f0f09b48
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+
+Executing: SysMgmt470\net5.0\SysManagementVersions.dll
+Environment Version: 5.0.9
+Framework Description: .NET 5.0.9
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt470/net5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 4.700.19.56404 Informational Version: 3.1.0+0f7f38c4fd323b26da10cce95f857f77f0f09b48
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+
+_____________________________________________________________________________________________________
+
+Executing: SysMgmt500\net48\SysManagementVersions.exe
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Framework 4.8.4400.0
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+  File Version: 4.8.4084.0 Informational Version: 4.8.4084.0
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+Press Enter to exit
+
+
+Executing: SysMgmt500\netcoreapp2.1\SysManagementVersions.dll
+Environment Version: 4.0.30319.42000
+Framework Description: .NET Core 4.6.30411.01
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/.nuget/packages/system.management/5.0.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 5.0.20.51904 Informational Version: 5.0.0+cf258a14b70ad9069470a108f13765e0e5988f51
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+Press Enter to exit
+
+
+Executing: SysMgmt500\netcoreapp3.1\SysManagementVersions.dll
+Environment Version: 3.1.18
+Framework Description: .NET Core 3.1.18
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt500/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 5.0.20.51904 Informational Version: 5.0.0+cf258a14b70ad9069470a108f13765e0e5988f51
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+Press Enter to exit
+
+
+Executing: SysMgmt500\net5.0\SysManagementVersions.dll
+Environment Version: 5.0.9
+Framework Description: .NET 5.0.9
+ManagementObjectSearcher contained in:
+System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file:///C:/Users/mw/Projects/BenchmarkDotNetToolbox/_other/SysManagementVersions/bin/SysMgmt500/net5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll
+  File Version: 5.0.20.51904 Informational Version: 5.0.0+cf258a14b70ad9069470a108f13765e0e5988f51
+
+new ManagementObjectSearcher("SELECT * FROM Win32_Processor") succeeded
+new ManagementObjectSearcher("root\SecurityCenter2", "SELECT * FROM AntiVirusProduct") succeeded
+new ManagementObjectSearcher("Select * from Win32_ComputerSystem") succeeded
+Press Enter to exit

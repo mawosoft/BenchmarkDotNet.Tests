@@ -5,16 +5,42 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDNParamDisposal", "BDNParamDisposal\BDNParamDisposal.csproj", "{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysManagementVersions", "SysManagementVersions\SysManagementVersions.csproj", "{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SysMgmt450|Any CPU = SysMgmt450|Any CPU
+		SysMgmt460|Any CPU = SysMgmt460|Any CPU
+		SysMgmt470|Any CPU = SysMgmt470|Any CPU
+		SysMgmt500|Any CPU = SysMgmt500|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt450|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt450|Any CPU.Build.0 = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt460|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt460|Any CPU.Build.0 = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt470|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt470|Any CPU.Build.0 = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt500|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDAA2D2-9273-48E9-8AA2-3D0F2D0E944E}.SysMgmt500|Any CPU.Build.0 = Debug|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt450|Any CPU.ActiveCfg = SysMgmt450|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt450|Any CPU.Build.0 = SysMgmt450|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt460|Any CPU.ActiveCfg = SysMgmt460|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt460|Any CPU.Build.0 = SysMgmt460|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt470|Any CPU.ActiveCfg = SysMgmt470|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt470|Any CPU.Build.0 = SysMgmt470|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt500|Any CPU.ActiveCfg = SysMgmt500|Any CPU
+		{FC6E9ED9-1440-4A2B-B5AC-E12D4AD5E7C8}.SysMgmt500|Any CPU.Build.0 = SysMgmt500|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
