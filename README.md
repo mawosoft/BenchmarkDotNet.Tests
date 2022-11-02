@@ -6,3 +6,4 @@ Various tests related to [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDo
 |--|--|
 | BDNParamDisposal | Tracks parameter/argument creation and disposal in BDN host and in generated projects. |
 | SysManagementVersions | `ManagementObjectSearcher` in various combos of target framework and System.Management version. |
+| BDNAppVeyor | Reports bogus packages in BDN's AppVeyor NuGet feed. |
