@@ -76,9 +76,9 @@ class Build : ICloneable {
     [string]$Branch
     # Empty if not a PR
     [string]$PullRequestId
-    # Can be null (represented by [datetime]::new(0)
+    # Can be null (represented by [datetime]::MinValue)
     [datetime]$Started
-    # Can be null (represented by [datetime]::new(0)
+    # Can be null (represented by [datetime]::MinValue)
     [datetime]$Finished
     # Not null. Refers to the build info.
     [datetime]$Created
@@ -140,9 +140,9 @@ class Build : ICloneable {
     # Usage: builds | % -Parallel ([Build]::ParallelDetailsRequester) | % -Process {
     #           $_.Build.FromRestApi($_.ProjectBuildJson, $_.ArtifactsJson)
     #        }
-    # Notes: Calling (class) methods outside the scriptblock will cause threads blocking
-    # each other and severly degrade the performance. Also, none of the usings or preferences
-    # of the enclosingscript apply to the scriptblock, hence full typenames, strict etc.
+    # Notes: Calling (class) methods residing outside this scriptblock will cause threads blocking
+    # each other and severly degrade the performance. Also, none of the usings or preferences of
+    # the enclosing script apply to the scriptblock, hence full typenames, strict etc.
     static [scriptblock]$ParallelDetailsRequester = {
         Set-StrictMode -Version 3.0
         $projectBuild = Invoke-RestMethod -Uri "$using:BaseUriProjectApi/$using:AccountName/$using:ProjectSlug/builds/$($_.BuildId)"
@@ -175,7 +175,7 @@ class Build : ICloneable {
 
     # Returns a custom copy for CSV export
     [PSCustomObject]ToCsvObject() {
-        [Specialized.OrderedDictionary]$custom = [ordered]@{}
+        [OrderedDictionary]$custom = [ordered]@{}
         foreach ($p in $this.psobject.Properties) {
             if (-not $p.Value) {
                 $custom[$p.Name] = $null
@@ -304,7 +304,7 @@ class AnalyzedBuild : ICloneable {
     [Object]Clone() {
         return $this.MemberwiseClone()
     }
-    
+
     AnalyzedBuild() { }
 
     AnalyzedBuild([Build]$build, [Package]$package, [bool]$lastNupkg) {
@@ -339,7 +339,7 @@ class AnalyzedBuild : ICloneable {
 
     # Returns a custom copy for CSV export
     [PSCustomObject]ToCsvObject() {
-        [Specialized.OrderedDictionary]$custom = [ordered]@{}
+        [OrderedDictionary]$custom = [ordered]@{}
         foreach ($p in $this.psobject.Properties) {
             if (-not $p.Value) {
                 $custom[$p.Name] = $null
@@ -395,7 +395,7 @@ class SimpleProgress {
     }
 
     [void]AddProgress() { $this.AddProgress(1) }
-    
+
     [void]AddProgress([int]$processed) {
         $this.ProcessedCount += $processed
         if (([datetime]::UtcNow - $this.LastReported) -lt $this.ReportInterval) { return }
@@ -564,9 +564,9 @@ if (-not $Offline.IsPresent) {
 }
 
 Write-Progress -Activity 'Analyze builds'
-[Dictionary[int, Package]]$packagesByBuildNumber = $packages.ConvertAll([Converter[Package, KeyValuePair[int, Package]]] { 
-        param([Package]$p) 
-        return [KeyValuePair[int, Package]]::new($p.GetBuildNumber(), $p) 
+[Dictionary[int, Package]]$packagesByBuildNumber = $packages.ConvertAll([Converter[Package, KeyValuePair[int, Package]]] {
+        param([Package]$p)
+        return [KeyValuePair[int, Package]]::new($p.GetBuildNumber(), $p)
     })
 [List[AnalyzedBuild]]$analyzedBuilds = $builds | Group-Object -Property BuildNumber | ForEach-Object {
     [bool]$needsPackage = $true
@@ -582,6 +582,7 @@ Write-Progress -Activity 'Analyze builds'
         }
     }
 }
+if (-not $analyzedBuilds) { $analyzedBuilds = @() }
 if ($packagesByBuildNumber.Count) {
     Write-Warning "Unassigned packages: $($packagesByBuildNumber.Count)"
 }
